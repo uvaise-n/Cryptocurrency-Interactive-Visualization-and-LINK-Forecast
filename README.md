@@ -1,16 +1,13 @@
 
 # Cryptocurrency Interactive Visualization and Forecast
 
-This project aims to develop interative visualizations of many Crypto coins and Forecast the future prices using ARIMA.
-The interactive vizualizations are made using Plot.ly library, and the Forecast uses ARIMA model for prediction.
+This project aims to develop interactive visualizations of many Crypto coins and Forecast the future prices using ARIMA. The interactive visualizations are made using the Plot.ly library, and the Forecast uses the ARIMA model for prediction.
 
-The historical prices data for Bitcoin, Ethreum, Monero, Chainlink, Binance Token, and Doge coin is obtained from CoinGecko.com. The data is available from the time the coins are added in CoinGecko.
+The historical prices data for Bitcoin, Ethreum, Monero, Chainlink, Binance Token and Dogecoin is obtained from CoinGecko.com. The data is available from the time the coins are added to CoinGecko.
 
-The interactive vizualizations are done using Plot.ly library which enable to filter the data by time and coin, and then to zoom in and see price movements to upto a daily range. 
-Historical price comparison and Daily price change/ volatility charts are made. 
-The correlation between BTC and alt coins, and between coins are also looked at.  
+The interactive visualizations are done using the Plot.ly library which enables to filter the data by time and coin, and then to zoom in and see price movements up to a daily range. Historical price comparison and Daily price change/ volatility charts are made. The correlation between BTC and altcoins, and between coins are also looked at.
 
-The forecast for LINK is done using ARIMA by looking at different aspects of data like Seasonality, Trend, Noise, Residuals etc. The model cannot be used to make real world investment decisions, primarily due to the high volatility of the coins.
+The forecast for LINK is done using ARIMA by looking at different aspects of data like Seasonality, Trend, Noise, Residuals, etc. The model cannot be used to make real-world investment decisions, primarily due to the high volatility of the coins.
 
 ### Contents
 1. Import Libraries
@@ -39,7 +36,7 @@ The forecast for LINK is done using ARIMA by looking at different aspects of dat
 
 8. References
 ## 🛠 Skills
-Python, Pandas, Matplotlib, Seaborn, Ploty, statsmodels, ARIMA, time-series analysis
+Python, Pandas, Matplotlib, Seaborn, Plotly, statsmodels, ARIMA, time-series analysis
 
   
 ## Visualization Example
@@ -54,23 +51,24 @@ Python, Pandas, Matplotlib, Seaborn, Ploty, statsmodels, ARIMA, time-series anal
 - The number days of exsistence (or since coin gecko collected historical information) can be seen from the shape of data. With BTC having the longest and DOGE being the recent
 
 ![Correlation](https://github.com/uvaise-n/Cryptocurrency-Interactive-Visualization-and-LINK-Forecast/blob/main/Correlation.JPG)
-- All coins have a very high correlation to Bitcoin and between each other. Chainlink and Ethereum has a surprisingly high correaltion to Bitcoin.
-- The Price change however doesn't have a very high correaltion. 
-- We could visualize the correaltion using a Pairplot
+- All coins have a very high correlation to Bitcoin and between each other. Chainlink and Ethereum have a surprisingly high correlation to Bitcoin.
+- The Price change however doesn't have a very high correlation.
+- We could visualize the correlation using a Pairplot
 ![Pairplot](https://github.com/uvaise-n/Cryptocurrency-Interactive-Visualization-and-LINK-Forecast/blob/main/Pairplot.JPG)
 
 #### Forecast
-- The data for LINK has an upward trend and a seasonality seperated by year. The residuals were fairly constant until mid 2020 and since then is very volatile. This reduces the quality of the forecast.
-- We see that the 3 month and second order differntiation of 12 months, both with box cox transformation makes the data stationary 
-- The model we used is still not stationary as we used the orginal monthly data and not the pre-processed ones. 
-- The pre-processed data is supposed to be used to build the model and do the prediction. However, they weren't capuring the seasonality well enough to give a forecast better than a straight line or a squiggly line. 
-- The model can't be used to make investment decisions, esp because it is used to predict long periods of time.  
+- The data for LINK has an upward trend and a seasonality separated by year. The residuals were fairly constant until mid-2020 and since then are very volatile. This reduces the quality of the forecast.
+- We see that the 3 month and second-order differentiation of 12 months, both with box cox transformation makes the data stationary
+- The model we used is still not stationary as we used the orginal monthly data and not the pre-processed ones.
+- The pre-processed data is supposed to be used to build the model and do the prediction. However, they weren't capturing the seasonality well enough to give a forecast better than a straight line or a squiggly line.
+- The model can't be used to make investment decisions, esp because it is used to predict long periods.
 
 #### Potential Improvements 
-1. The model can be made better with incorporating the seasonal trends with the help of a domain expert. Due to the high volatility of crypto currencies the seasonality however maybe difficult to determine and could make ARIMA not a great model for crypto forecast. 
-2. The model can be made better with use of standardization and differentiation techniques
-3. By avoiding periods of high volatility
-4. Using models other than ARIMA 
+1. The model can be made better by incorporating the seasonal trends with the help of a domain expert. Due to the high volatility of cryptocurrencies the seasonality however may be difficult to determine and could make ARIMA not a great model for crypto forecast.
+2. The model can be made better with the use of standardization and differentiation techniques
+3 By avoiding periods of high volatility
+4. Using models other than ARIMA
+
 ## Acknowledgements
 
  - [Data from CoinGecko](https://www.coingecko.com/en/coins/chainlink/historical_data/usd#panel)
