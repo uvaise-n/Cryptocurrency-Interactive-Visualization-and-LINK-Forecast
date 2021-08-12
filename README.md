@@ -57,11 +57,13 @@ Python, Pandas, Matplotlib, Seaborn, Plotly, statsmodels, ARIMA, time-series ana
 ![Pairplot](https://github.com/uvaise-n/Cryptocurrency-Interactive-Visualization-and-LINK-Forecast/blob/main/Pairplot.JPG)
 
 #### Forecast
+![Forecast](https://github.com/uvaise-n/Cryptocurrency-Interactive-Visualization-and-LINK-Forecast/blob/main/Forecast.JPG)
 - The data for LINK has an upward trend and a seasonality separated by year. The residuals were fairly constant until mid-2020 and since then are very volatile. This reduces the quality of the forecast.
 - We see that the 3 month and second-order differentiation of 12 months, both with box cox transformation makes the data stationary
 - The model we used is still not stationary as we used the orginal monthly data and not the pre-processed ones.
 - The pre-processed data is supposed to be used to build the model and do the prediction. However, they weren't capturing the seasonality well enough to give a forecast better than a straight line or a squiggly line.
 - The model can't be used to make investment decisions, esp because it is used to predict long periods.
+
 
 #### Potential Improvements 
 1. The model can be made better by incorporating the seasonal trends with the help of a domain expert. Due to the high volatility of cryptocurrencies the seasonality however may be difficult to determine and could make ARIMA not a great model for crypto forecast.
